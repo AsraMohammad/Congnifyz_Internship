@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form Validation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>User Input Form</h1>
+    </header>
+
+    <main class="container my-5">
+        <form id="userForm" action="/submit" method="POST" class="bg-light p-5 rounded shadow-sm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                    Your password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character.
+                </small>
+                <div id="passwordStrength" class="mt-2"></div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Submit</button>
+        </form>
+
+        <!-- About section -->
+        <div id="aboutSection" class="mt-5 d-none">
+            <h2>About Us</h2>
+            <p>This is the about section of our application.</p>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Form Submission</p>
+    </footer>
+
+    <!-- JavaScript libraries and custom script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/page.min.js"></script> <!-- Include page.js -->
+    <script src="/js/script.js"></script> <!-- Your custom script for form validation -->
+</body>
+</html>

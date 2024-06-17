@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Response</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-success text-white text-center py-3">
+        <h1>Form Submission Received</h1>
+    </header>
+    <main class="container my-5">
+        <div class="card">
+            <div class="card-body">
+                <p><strong>Name:</strong> <%= name %></p>
+                <p><strong>Email:</strong> <%= email %></p>
+                <p><strong>Age:</strong> <%= age %></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
